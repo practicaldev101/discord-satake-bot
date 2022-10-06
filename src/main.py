@@ -74,4 +74,5 @@ async def test(ctx):
     embed_message.color = discord.Colour.green()
     await ctx.message.channel.send(embed=embed_message)
 
+
 bot.run(TOKEN)
