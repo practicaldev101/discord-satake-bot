@@ -63,7 +63,6 @@ async def sendDMUsers(ctx, *, message):
             pass
         
 
-
 @bot.command()
 async def test(ctx):
 
