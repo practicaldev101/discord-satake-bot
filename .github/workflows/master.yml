@@ -25,9 +25,9 @@ jobs:
         python-version: "3.10"
     - name: Install dependencies
       run: |
-        pip install –upgrade setuptools
+        pip install --upgrade setuptools
         python -m pip install --upgrade pip
-        pip install ujson aiohttp discord dotenv
+        pip install ujson aiohttp discord python-dotenv
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run App
       run: |
