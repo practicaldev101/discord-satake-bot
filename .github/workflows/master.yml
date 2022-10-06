@@ -32,8 +32,8 @@ jobs:
     - name: Create Env File
       run: |
         touch .env
-        echo "${{secrets.TOKEN }}"
-        echo "${{secrets.API_URL}}"
+        echo "${{secrets.TOKEN }}" >> .env
+        echo "${{secrets.API_URL}}" >> .env
         cat .env
     - name: Run App
       run: |
