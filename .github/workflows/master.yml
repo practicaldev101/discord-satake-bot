@@ -38,4 +38,4 @@ jobs:
         cat .env
     - name: Run App
       run: |
-        python3 src/main.py > /dev/null 2>&1 &
+        setsid -f python3 src/main.py
