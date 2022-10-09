@@ -13,8 +13,9 @@ permissions:
   contents: read
 
 jobs:
-  build:
 
+  build:
+    environment: App Environment
     runs-on: self-hosted
 
     steps:
